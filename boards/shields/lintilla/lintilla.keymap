@@ -122,14 +122,14 @@
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
 //         ┃LAUNCHP┃                                                                                          ┃ BKSPC  ┃
-            &lt 5 F4                                                                                           &lt 5 BACKSPACE
+            &kp F4                                                                                           &lt 5 BACKSPACE
 //         ┃MISSION┃                                                                                          ┃ keybd ┃
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃  ESC  ┃   Q   ┃   W   ┃   F   ┃   P   ┃   B   ┃                          ┃   J   ┃   L   ┃   U   ┃   Y   ┃   ' "   ┃ DELETE ┃
-    &kp ESC  &kp Q   &kp W   &kp F   &kp P   &kp B                              &kp J   &kp L   &kp U   &kp Y   &mt LS(NUMBER_2) APOS  &kp DELETE
+    &lt 7 ESC  &kp Q   &kp W   &kp F   &kp P   &kp B                              &kp J   &kp L   &kp U   &kp Y   &mt LS(NUMBER_2) APOS  &kp DELETE
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃  TAB  ┃   A   ┃   R   ┃   S   ┃   T   ┃   G   ┃                          ┃   M   ┃   N   ┃   E   ┃   I   ┃  O  ┃RETURN ┃
-    Glb TAB  Cmd A   Opt R   Ctl S   Sft T   &mt EQUAL G                      &kp M   Sft N   Ctl E   Opt I  Cmd O  &kp RET
+    &mt SPACE TAB  Cmd A   Opt R   Ctl S   Sft T   &mt EQUAL G                      &kp M   Sft N   Ctl E   Opt I  Cmd O  &kp RET
 // ┃ Globe ┃ Shift ┃ Ctrl  ┃  Opt  ┃  Cmd  ┃ R Alt ┃                          ┃ R Alt ┃  Cmd  ┃  Opt  ┃ Ctrl  ┃ Shift ┃ Globe ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   Z   ┃   X   ┃   C   ┃   D   ┃   V   ┃                          ┃   K   ┃   H   ┃  , ;  ┃  . :  ┃  / \  ┃
@@ -293,8 +293,36 @@
 //                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
             >;
         };
+
+        Excel {
+//                       ┏━━━━━━━━━━━━━━━━━━━━━━━━━┓
+            display-name = "Excel"            ;
+//                       ┗━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            bindings = <
+//         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
+//         ┃       ┃                                                                                          ┃       ┃
+             &none                                                                                              &none
+// ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
+// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
+     &trans   &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))  &kp F4     &kp LA(NUMBER_6)  &mt PLUS KP_MINUS                              &none   &none   &none   &none   &none   &none
+// ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
+// ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
+     &none   &none   &kp LA(NUMBER_1)   &kp COMMA  &kp EQUAL         &kp LS(SEMI)                                &none   &none   &none   &none   &none   &none
+// ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
+//         ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃
+             &mt LC(Y) LC(Z)   &kp LC(X)          &kp LC(C)  &kp LC(D)         &mt LC(LS(V)) LC(V)                              &none   &none   &none   &none   &none
+//         ┗━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━┳━━━┻━━━┳━━━┻━━━┳━━━━━━━┓  ┏━━━━━━━┳━━━┻━━━┳━━━┻━━━┳━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
+//                                     ┃       ┃       ┃       ┃  ┃       ┃       ┃       ┃
+                                         &none   &none   &none      &none   &none   &none
+//                                     ┗━━━━━━━┫       ┣━━━━━━━┛  ┗━━━━━━━┫       ┣━━━━━━━┛
+//                                             ┗━━━━━━━┛                  ┗━━━━━━━┛
+            >;
+        };
         // Extra empty layers for ZMK Studio
 
+        layer8 {
+            status = "reserved";
+        };
         layer9 {
             status = "reserved";
         };
