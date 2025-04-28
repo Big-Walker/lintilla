@@ -122,7 +122,7 @@
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
 //         ┃LAUNCHP┃                                                                                          ┃ BKSPC  ┃
-            &tog 7                                                                                          &lt 5 BSPC
+            &lt 7 F4                                                                                           &lt 5 BACKSPACE
 //         ┃MISSION┃                                                                                          ┃ keybd ┃
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃  ESC  ┃   Q   ┃   W   ┃   F   ┃   P   ┃   B   ┃                          ┃   J   ┃   L   ┃   U   ┃   Y   ┃   ' "   ┃ DELETE ┃
@@ -155,7 +155,7 @@
      &none   &none   &none   &none   &none   &none                            &kp MINUS &kp N7 &kp N8  &kp N9 &kp SLASH  &kp DELETE
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ CtrlA ┃       ┃ CtrlD ┃       ┃       ┃                          ┃   = +   ┃   4   ┃   5   ┃   6   ┃   +   ┃RETURN ┃
-     &none &kp LC(A)  &trans     &kp LC(S)  &none     &none                          &mt EQUAL PLUS &kp N4  &kp N5  &kp N6 &kp ASTERISK &kp RET
+     &none Cmd LC(A)  &trans     Ctl LC(S)  &trans     &none                          &mt EQUAL PLUS &kp N4  &kp N5  &kp N6 &kp ASTERISK &kp RET
 // ┃ Globe ┃ Shift ┃ Ctrl  ┃  Opt  ┃  Cmd  ┃ R Alt ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ CtrlZ ┃ CtrlX ┃ CtrlC ┃ CtrlV ┃       ┃                          ┃   : .  ┃   1   ┃   2   ┃   3   ┃   =   ┃
@@ -181,7 +181,7 @@
      &none   &none   &none   &none   &none   &none                           &kp PG_UP    &kp HOME &none   &none   &none  &kp DELETE
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃       ┃ Cmd A ┃       ┃       ┃       ┃       ┃                          ┃ Home  ┃ Left  ┃  Up   ┃ Right ┃  End  ┃RETURN ┃
-     &none  &kp LC(A) &none   &kp LC(S) &none   &none                        &none        &kp LEFT &kp UP  &kp RIGHT &none &kp RET
+     &none  Cmd LC(A) &trans  Ctl LC(S) &trans   &none                        &none        &kp LEFT &kp UP  &kp RIGHT &none &kp RET
 // ┃ Globe ┃ Shift ┃ Ctrl  ┃  Opt  ┃  Cmd  ┃ R Alt ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃ Cmd Z ┃ Cmd X ┃ Cmd C ┃ Cmd V ┃       ┃                          ┃ Pg Dn ┃       ┃ Down  ┃       ┃       ┃
@@ -207,7 +207,7 @@
      &none   &none   &none   &none   &none   &none                              &none  &kp F7  &kp F8  &kp F9   &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃ Globe ┃ Shift ┃ Ctrl  ┃  Opt  ┃  Cmd  ┃ R Alt ┃                          ┃       ┃  F4   ┃  F5   ┃  F6   ┃       ┃       ┃
-&kp GLOBE &kp LSFT &kp LCTL &kp LALT &kp LGUI &kp RALT                          &none  &kp F4  &kp F5  &kp F6   &none   &none
+&kp GLOBE &kp LGUI &kp LALT &kp LCTL &kp LSFT &kp RALT                          &none  &kp F4  &kp F5  &kp F6   &none   &none
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃  F1   ┃  F2   ┃  F3   ┃       ┃
              &none   &none   &none   &none   &none                              &none  &kp F1  &kp F2  &kp F3   &none
@@ -229,10 +229,10 @@
              &none                                                                                              &none
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃   `   ┃   *   ┃   #   ┃   +   ┃   %   ┃   _   ┃                          ┃       ┃ CtrlU ┃       ┃       ┃       ┃       ┃
-&kp GRAVE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                        &none &kp LC(U) &none   &none   &none   &none
+&kp GRAVE &kp STAR &kp HASH &kp PLUS &kp PRCNT &kp UNDER                        &none &none &kp LC(U)   &none   &none   &none
 // ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫
 // ┃   ~   ┃   ^   ┃   @   ┃   !   ┃   =   ┃   $   ┃                          ┃ R Alt ┃  Cmd  ┃  Opt  ┃ Ctrl  ┃       ┃ Globe ┃
-&kp TILDE &kp CARET &kp AT &kp EXCL &kp EQUAL &kp DLLR                      &kp RALT &kp LGUI &kp LALT &kp LCTL &none &kp GLOBE
+&kp TILDE &kp CARET &kp AT &kp EXCL &kp EQUAL &kp DLLR                      &kp RALT &kp LSFT &kp LCTL &kp LALT &kp LGUI &kp GLOBE
 // ┗━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┫                          ┣━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━╋━━━━━━━┛
 //         ┃   <   ┃   >   ┃   [   ┃   ]   ┃   ?   ┃                          ┃       ┃       ┃       ┃       ┃       ┃
              &kp LT &kp GT &kp LBKT &kp RBKT &kp QMARK                          &none   &none   &none   &none   &none
@@ -276,7 +276,7 @@
             bindings = <
 //         ┏━━━━━━━┓                                                                                          ┏━━━━━━━┓
 //         ┃       ┃                                                                                          ┃       ┃
-             &tog 7                                                                                              &none
+             &none                                                                                              &none
 // ┏━━━━━━━╋━━━━━━━╋━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━┓                          ┏━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━╋━━━━━━━╋━━━━━━━┓
 // ┃       ┃       ┃       ┃       ┃       ┃       ┃                          ┃       ┃       ┃       ┃       ┃       ┃       ┃
      &trans   &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))  &kp F4     &kp LA(NUMBER_6)  &mt PLUS KP_MINUS                              &none   &none   &none   &none   &none   &none
