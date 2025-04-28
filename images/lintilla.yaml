@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: lintilla}
 layers:
   Colemak:
-  - {t: F4, h: keyboard}
+  - F4
   - {t: BACKSPACE, h: keyboard}
-  - Esc
+  - {t: Esc, h: Excel}
   - Q
   - W
   - F
@@ -15,7 +15,7 @@ layers:
   - Y
   - {t: '''', h: ⇧2}
   - DELETE
-  - {t: ⇥, h: 🌐}
+  - {t: ⇥, h: SPACE}
   - {t: A, h: ⌘}
   - {t: R, h: ⌥}
   - {t: S, h: ^}
@@ -216,8 +216,8 @@ layers:
   - {type: held}
   - ''
   keyboard:
-  - {t: dongle flash, type: held}
-  - {t: ▽, type: trans}
+  - dongle flash
+  - {type: held}
   - BRI UP
   - ''
   - ''
@@ -260,3 +260,46 @@ layers:
   - ''
   flash mode: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '']
+  Excel:
+  - ''
+  - ''
+  - {type: held}
+  - ⇧⌥LEFT
+  - ⌥⇧RIGHT
+  - F4
+  - ⌥6
+  - {t: KP MINUS, h: +}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ⌥1
+  - ','
+  - '='
+  - ⇧;
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ^Z, h: ^Y}
+  - ^X
+  - ^C
+  - ^D
+  - {t: ^V, h: ^⇧V}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
